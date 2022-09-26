@@ -1,0 +1,48 @@
+###
+POST http://localhost:3000/api/v1/customers/customer HTTP/1.1
+Content-Type: application/json
+
+{
+    "user_name": {
+        "first_name": "Yaneth",
+        "last_name": "Mejía",
+        "full_name": "Yaneth Mejía",
+        "slug": "YanethM"
+    },
+    "contact": {
+        "ubication": {
+            "city": "Manizales",
+            "code_zip": 170002,
+            "address": [28732, -138732]
+        }
+    }
+}
+
+###
+GET http://localhost:3000/api/v1/customers HTTP/1.1
+
+###
+GET http://localhost:3000/api/v1/customers/63322447a54fca6a50ccf062 HTTP/1.1
+
+###
+PUT http://localhost:3000/api/v1/customers/63322447a54fca6a50ccf062 HTTP/1.1
+Content-Type: application/json
+
+{
+    "user_name": {
+        "first_name": "Yaneth",
+        "last_name": "Mejía",
+        "full_name": "Yaneth Mejía",
+        "slug": "Yaneth1991"
+    },
+    "contact": {
+        "ubication": {
+            "city": "Manizales",
+            "code_zip": 170002,
+            "address": [28732, -138732]
+        }
+    }
+}
+
+###
+DELETE http://localhost:3000/api/v1/customers/633222f4c48a495dbc7e9fec HTTP/1.1
